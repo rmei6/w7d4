@@ -1,0 +1,31 @@
+<header class="main-nav">
+	<nav class="left-nav">
+		<ul>
+			<li id="sections-sidebar-btn">
+				<i class="fa fa-bars"></i>
+				<input type="submit" value = "SECTIONS">
+			</li>
+
+			<li id="search-modal-btn">
+				<i class="fa fa-search"></i>
+				<input type="submit" value = "SEARCH">
+			</li>
+		</ul>
+	</nav>
+
+	<nav class="right-nav">
+		<ul>
+			<li>
+				<button>SUBSCRIBE NOW</button>
+			</li>
+			<li>
+				<button>LOG IN</button>
+			</li>
+			<li id="gear">
+				<i class="fas fa-cog"></i>
+					<div class="dropdown-content"><%= render partial: 'shared/gear_dropdown' %></div>
+			</li>
+		</ul>	
+
+	</nav>
+</header>
