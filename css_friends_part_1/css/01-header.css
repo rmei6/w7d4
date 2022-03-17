@@ -7,15 +7,40 @@ body {
   background: #eee;
 }
 
-header {
-  display: grid;
-  grid-template-columns: repeat(8,12.5%);
-  grid-template-rows: 25%;
-  background: red;
+.header-logo {
+  float: left;
+  font-weight: 400;
 }
 
-h1 {
-  grid-column: 2/3;
+.header-list {
+  float: right;
+}
+
+.header a{
+  display: block;
+  border-right: 1px solid #ccc;
+  padding: 10px 20px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: red;
+  align-content: space-around;
+}
+
+li {
+  display: block;
+  float: left;
+}
+
+li:hover {
+  background-color: black;
+}
+
+.header a:hover {
+  background-color: black;
 }
 
 
